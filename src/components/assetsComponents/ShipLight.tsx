@@ -1,10 +1,5 @@
 import { useGLTF } from "@react-three/drei";
-
-interface ModelProps {
-  position?: [number, number, number];
-  rotation?: [number, number, number];
-  scale?: [number, number, number];
-}
+import { ModelProps } from "../../types/ModelProps";
 
 export function Model(props: ModelProps) {
   const { nodes, materials } = useGLTF("pirateKit/Models/glTF/ship_light.gltf");
