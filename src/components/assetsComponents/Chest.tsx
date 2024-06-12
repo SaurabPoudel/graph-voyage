@@ -5,7 +5,7 @@ import * as THREE from "three"; // Import THREE
 import { useGLTF } from "@react-three/drei";
 import { ModelProps } from "../../types/ModelProps";
 
-export function Model(props: ModelProps) {
+export function Model(props: ModelProps<THREE.Group>) {
   const { nodes, materials } = useGLTF("/pirateKit/Models/glTF/chest.gltf");
 
   return (

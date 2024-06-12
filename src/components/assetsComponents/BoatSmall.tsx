@@ -2,9 +2,9 @@ import * as THREE from "three";
 import { useGLTF } from "@react-three/drei";
 import { ModelProps } from "../../types/ModelProps";
 
-export function Model(props: ModelProps) {
+export function Model(props: ModelProps<THREE.Group>) {
   const { nodes, materials } = useGLTF(
-    "/pirateKit/Models/glTF/boat_small.gltf",
+    "/pirateKit/Models/glTF/boat_small.gltf"
   );
 
   return (
